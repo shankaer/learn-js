@@ -2,11 +2,16 @@
 <html>
     <head>
         <title>To do list</title>
+        <script src="minitodo.js"></script>
     </head>
     <body>
-        <input id="taskinput" placeholder="entertask">
-        <button id="addbtn">Add</button>
-        <div id="list"></div>
-      <script src="minitodo.js"></script>
+        <input id="taskinput" placeholder="entertask" onkeypress="addTaskOnClick(event)">
+        <button id="addbtn" onclick="addTask()" >Add</button>
+        <div>
+            <ul id="list">
+
+            </ul>
+        </div>
+      
     </body>
 </html>

@@ -4,7 +4,7 @@ function changeText(){
 }
 function showTime(){
     const curr=new Date();
-    const timestring=curr.toLocaleTimeString(navigator.language,{hour: '2-digit' , minute:'2-digit'});
+    const timestring=curr.toLocaleTimeString();
     document.getElementById("time").innerText="current time: "+ timestring;
 }
 function changecolor(){
@@ -22,6 +22,7 @@ function details(){
     }
      document.getElementById("detail").innerText = user.greet();
 }
+// TODO Please extract this into a separate function
 document.getElementById("btn").addEventListener("click", function(){
     console.log("handled with event listener");
 });
