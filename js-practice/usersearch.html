@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>User Search</title>
+         <script src="usersearch.js"></script>
     </head>
     <body>
-        <input id="userid" placeholder="enter user ID(1-10)">
-        <button id="searchbtn">Search</button>
+        <input id="userid" placeholder="enter user ID(1-10)" onkeypress="addTaskOnClick(event)">
+        <button id="searchbtn" onclick="userdetails()">Search</button>
         <div id="result"></div>
-        <script src="usersearch.js"></script>
     </body>
 </html>
